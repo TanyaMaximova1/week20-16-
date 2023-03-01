@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myForm">
+        <div>
+            <p><b>1. Выберите марку автомобиля: </b></p>
+            <select name="select">
+                <option value="1">Reno</option>
+                <option value="2">Opel</option>
+                <option value="3">Mazda</option>
+                <option value="4">Jaguar</option>
+            </select>
+        </div>
+        <div>
+            <p><b>2. Выберите тип топлива:</b></p>
+            <input type="checkbox" name="fuel_checkbox_1" id="b" /><span>бензин</span><br />
+            <input type="checkbox" name="fuel_checkbox_2" id="d" /><span>дизель</span><br />
+            <input type="checkbox" name="fuel_checkbox_3" id="g" /><span>газ</span><br />
+            <input type="checkbox" name="fuel_checkbox_4" id="e" /><span>электричество</span>
+        </div>
+        <div>
+            <br />
+            <label><b>3. Введите объем дигателя:</b></label>
+            <input type="text" name="input_text" placeholder="Объем дигателя" id="engine_capacity" minlength="1.1"
+                maxlength="3.5" required>
+        </div>
+        <div>
+            <p><b>4. Выберите:</b></p>
+            <input type="checkbox" name="cartipe_1" id="new_car" /><span>Автомобить новый</span><br />
+            <input type="checkbox" name="cartipe_2" id="old_car" /><span>Автомобить подержанный</span>
+        </div>
+        <div>
+            <p><b>5. Количество владельцев:</b></p>
+            <input type="checkbox" name="owner_1" id="ovner_1_2" /><span>1-2</span><br />
+            <input type="checkbox" name="owner_2" id="owner_3" /><span>Больше 3х</span>
+        </div>
+        <div>
+            <p><b>6. Выберите способ оплаты:</b></p>
+            <input type="checkbox" name="payment_method_1" id="card" /><span>Картой</span><br />
+            <input type="checkbox" name="payment_method_2" id="cash" /><span>Наличными</span><br />
+            <input type="checkbox" name="payment_method_3" id="account" /><span>Счёт на юридическое лицо</span>
+        </div>
+        <div>
+            <button class="button" onclick="buttonClik()">Рассчитать цену</button>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
